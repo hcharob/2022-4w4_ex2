@@ -355,7 +355,7 @@ a:visited {
 }
 
 a:hover, a:focus, a:active {
-  color: #CF59D3;
+  color: #3674ED;
 }
 
 a:focus {
@@ -487,11 +487,25 @@ COMPOSANTES
 .site__header {
   width: 100vw;
   display: flex;
-  background-color: #3674ED;
-  color: #fa9292;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding-left: 1rem;
+  background-color: #3674ED;
+  color: #fa9292;
+}
+
+@media screen and (min-width: 800px) {
+  .site__header {
+    flex-direction: row;
+    padding-left: 1rem;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .site__header {
+    flex-direction: row;
+    padding-left: 1rem;
+  }
 }
 
 .site__header .header__titre {
@@ -530,6 +544,16 @@ COMPOSANTES
   position: absolute;
   transition: transform .3s;
   transform: rotate(0);
+  top: 1rem;
+  left: 0.5rem;
+  background-color: #F2F2F2;
+  border-radius: 3px;
+  padding: 2px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #chk-burger {
@@ -546,6 +570,8 @@ COMPOSANTES
 
 #chk-burger:checked ~ .menu-principal-container {
   display: block;
+  margin-top: 1rem;
+  margin-left: 2.5rem;
 }
 
 .menu {
