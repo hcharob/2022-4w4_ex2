@@ -4,7 +4,7 @@
     width: 90%;
     padding: 3vh 0 4vh 3vw;
 
-    &__bloc {
+    @mixin cercle-animes {
         display: flex;
         align-items: center;
         justify-content: center;    
@@ -15,8 +15,11 @@
         font-weight: bold;
         background-color: #3674ED;
         box-shadow: 5px 5px #CF59D3;
-        animation: anim_bloc 2s ease-in-out infinite;
-        
+      }
+
+    &__bloc {
+        @include cercle-animes;
+        animation: anim_bloc 2s ease-in-out infinite;    
     }
 
     &__bloc:nth-of-type(2) {
