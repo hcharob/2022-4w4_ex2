@@ -1,0 +1,69 @@
+.principal {
+    border: 2px solid #3674ED;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+        font: italic bold 2rem Montserrat;
+        text-transform: uppercase;
+        color: #F2F2F2;
+        text-align: center;
+        text-shadow: -2px 2px #3674ED, 2px -2px #CF59D3;
+    }
+}
+
+.formation {
+    display: flex;
+    flex-direction: column;
+
+    &__titre {
+        font-size: 2rem;
+        color: $color__font-main;
+        margin: 10px 0px;
+        font-family: $font__titre;
+    }
+    &__liste {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    &__cours {
+        background-color: $color__background-cours;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        transition: box-shadow 0.2s, transform 0.5s;
+        @media screen and (min-width : $largeur__media--tablette){
+            width: 45%;
+        }
+        @media screen and (min-width : $largeur__media--desktop){
+            width: 30%;
+        }
+        padding: 10px;
+    }
+
+    &__cours:hover {  
+        transform: translate(-5px, -5px);
+        box-shadow: 10px 10px #CF59D3;
+    }
+
+
+}
+
+.cours__titre {
+    font-size: 1.5rem;
+    color: $color__font-main;
+    margin: 5px 0px;
+}
+
+.cours__sigle {
+    font-size: 1.2rem;
+    color: #3674ED;
+    margin: 0;
+}
+
+.cours__description {
+    font-size: 1rem;
+}

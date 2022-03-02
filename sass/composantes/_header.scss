@@ -1,0 +1,39 @@
+.site__header {
+  display: flex;
+  background-color: $color__background-header;
+  color: $color__font-header;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 1rem;
+
+  @mixin titre {
+    font-size: 3em;
+    font-family: $font__titre;
+    letter-spacing: 5px;
+    color: #A69D8D;
+    font-weight: bold;
+  }
+
+  .header__titre {
+    @include titre;
+    text-shadow: -4px 4px #222426, 4px -4px #CF59D3;
+  }
+
+  .header__description {
+    font-size: 2rem;
+    font-family: $font__main;
+    text-transform: uppercase;
+    color: #F2F2F2;
+    text-align: center;
+    text-shadow: -3px 3px #222426, 3px -3px #CF59D3;
+    padding-left: 2rem;
+  }
+
+  h2 {}
+}
+
+.util {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+}
