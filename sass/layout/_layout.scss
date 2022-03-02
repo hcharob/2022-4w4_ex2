@@ -6,6 +6,8 @@ theme name: Lab 2 Lemieux Florence
     //background-color: rgb(122, 176, 207);
     background-color: $color__background-body;
     font-family: $font__main;
+    width: 100vw; 
+    overflow-x: hidden;  
 }
 
 
