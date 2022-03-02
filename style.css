@@ -516,6 +516,12 @@ COMPOSANTES
   display: flex;
   flex-direction: column;
   margin-left: auto;
+  padding-right: 1rem;
+}
+
+.util .util__lien {
+  display: flex;
+  justify-content: space-around;
 }
 
 #burger {
@@ -584,32 +590,19 @@ a:-webkit-any-link {
   align-items: center;
 }
 
+.site__footer svg {
+  color: #F2F2F2;
+  text-align: center;
+}
+
 .site__footer .recherche {
   margin-bottom: 1rem;
 }
 
-.site__footer__menu__ul {
-  display: flex;
-  list-style-type: none;
-  justify-content: center;
-}
-
-.site__footer__menu__ul .menu-item {
-  margin: 10px 5px;
-}
-
-.site__footer__menu__ul .menu-item a {
+.site__footer a {
   display: flex;
   align-items: center;
   padding: 3px;
-}
-
-.site__footer__menu__ul .menu-item a svg {
-  color: #3674ED;
-}
-
-.site__footer__menu__ul .menu-item a:hover svg {
-  color: #F2F2F2;
 }
 
 .footer__titre,
@@ -621,6 +614,8 @@ a:-webkit-any-link {
 
 .site__footer__menu__ul ul {
   list-style-type: none;
+  display: flex;
+  justify-content: center;
 }
 
 .erreur-404 h1 {
@@ -635,13 +630,16 @@ a:-webkit-any-link {
 .recherche {
   background-color: #F2F2F2;
   width: 300px;
+  height: 30px;
   position: relative;
   display: flex;
+  box-shadow: -3px 3px #3674ED, 3px -3px #CF59D3;
 }
 
 .recherche__input {
   background-color: transparent;
-  width: 100%;
+  width: 90%;
+  border: none;
 }
 
 .recherche__bouton {
@@ -655,10 +653,15 @@ a:-webkit-any-link {
   width: 30px;
   border: none;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .recherche__bouton svg {
   color: black;
+}
+
+header .recherche {
+  box-shadow: -3px 3px #222426, 3px -3px #CF59D3;
 }
 
 /* ---------------------------------------------------------

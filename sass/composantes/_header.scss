@@ -28,12 +28,16 @@
     text-shadow: -3px 3px #222426, 3px -3px #CF59D3;
     padding-left: 2rem;
   }
-
-  h2 {}
 }
 
 .util {
   display: flex;
   flex-direction: column;
   margin-left: auto;
+  padding-right: 1rem;
+
+  .util__lien {
+    display: flex;
+    justify-content: space-around;
+  }
 }

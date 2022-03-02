@@ -1,12 +1,15 @@
 .recherche {
     background-color: #F2F2F2;
     width: 300px;
+    height: 30px;
     position: relative;
     display: flex;
+    box-shadow: -3px 3px #3674ED, 3px -3px #CF59D3;
 
     &__input {
         background-color: transparent;
-        width: 100%;
+        width: 90%;
+        border: none;
     }
 
     &__bouton {
@@ -20,9 +23,15 @@
         width: 30px;
         border: none;
         background-color: transparent;
+        cursor: pointer;
 
         svg {
             color: black;
         }
     }
+}
+
+header .recherche {
+    box-shadow: -3px 3px #222426, 3px -3px #CF59D3;
+
 }
