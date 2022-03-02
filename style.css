@@ -395,7 +395,7 @@ a:hover, a:active {
 }
 
 .header__titre a:hover, .header__titre a:focus, .header__titre a:active {
-  color: #CF59D3;
+  color: #F2F2F2;
 }
 
 .header__titre a:focus {
@@ -651,27 +651,49 @@ ANIMATION
 .animation {
   display: flex;
   justify-content: space-between;
+  width: 90%;
+  padding: 3vh 0 4vh 3vw;
 }
 
 .animation__bloc {
   display: flex;
-  justify-content: center;
   align-items: center;
-  width: 100px;
-  height: 100px;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
-  background-color: #1161f7;
-  color: #fff;
-  font-size: 3rem;
-  animation: anim-entete 1s forwards;
+  color: #222426;
+  font-weight: bold;
+  background-color: #3674ED;
+  box-shadow: 5px 5px #CF59D3;
+  animation: anim_bloc 2s ease-in-out infinite;
 }
 
-@keyframes anim-entete {
+.animation__bloc:nth-of-type(2) {
+  animation-delay: 0.2s;
+}
+
+.animation__bloc:nth-of-type(3) {
+  animation-delay: 0.4s;
+}
+
+.animation__bloc:nth-of-type(4) {
+  animation-delay: 0.6s;
+}
+
+.animation__bloc:nth-of-type(5) {
+  animation-delay: 0.8s;
+}
+
+@keyframes anim_bloc {
   0% {
-    transform: translateY(-100vh);
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, 20px);
   }
   100% {
-    transform: translateY(0);
+    transform: translate(0, 0);
   }
 }
 
