@@ -579,7 +579,13 @@ a:-webkit-any-link {
 .site__footer {
   font-family: "Montserrat", sans-serif;
   background-color: #222426;
-  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.site__footer .recherche {
+  margin-bottom: 1rem;
 }
 
 .site__footer__menu__ul {
@@ -627,13 +633,15 @@ a:-webkit-any-link {
 }
 
 .recherche {
-  background-color: rgba(102, 102, 102, 0.8);
+  background-color: #F2F2F2;
   width: 300px;
   position: relative;
+  display: flex;
 }
 
 .recherche__input {
   background-color: transparent;
+  width: 100%;
 }
 
 .recherche__bouton {
@@ -643,6 +651,14 @@ a:-webkit-any-link {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 100%;
+  width: 30px;
+  border: none;
+  background-color: transparent;
+}
+
+.recherche__bouton svg {
+  color: black;
 }
 
 /* ---------------------------------------------------------
