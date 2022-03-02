@@ -11,7 +11,7 @@
           if(has_post_thumbnail()) : 
      ?>
      <figure class="article__contenu__figure">
-          <?php the_post_thumbnail("thumbnail"); ?>
+          <?php the_post_thumbnail("small"); ?>
      </figure>
                
      <?php endif ?>
