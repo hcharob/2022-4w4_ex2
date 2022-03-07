@@ -1,4 +1,33 @@
 <footer class="site__footer">
+<footer class="site__footer">
+    <!-- Première rangée de colonne -->
+    <div class="site__footer__colonne">
+        <section class="footer__article">
+            <h2>Titre 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, doloremque sed dolores explicabo expedita excepturi accusantium voluptatibus in harum labore, fugiat ut modi error delectus quod pariatur enim quia perspiciatis.</p> 
+        </section>
+        <section class="footer__adresse">
+            gregegegegege </section>
+        <section class="footer__liens">
+            <?php wp_nav_menu(array(
+                    "menu"=>"liens_externes")); ?> 
+             </section>
+    </div>
+
+    <!-- Section de plusieurs lignes -->
+    <div class="site__footer__ligne">
+        <section class="footer__description">
+            <section class="footer__nav"> </section>
+            <section class="copyright"> </section>
+            <section class="footer__auteur"> </section>
+        </section>
+    </div>
+
+
+
+
+
+
     <h2 class="footer__titre">ZE FOOTER EXTRAORDINAIRE</h2>
     <p class="footer__presentation">Un site web fait par une élève du TIM à l'aide de Wordpress.</p>
     <h3 class="footer__author">Fait par Hervée Charbonneau-Robichaud</h3>
